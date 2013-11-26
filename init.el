@@ -212,6 +212,13 @@
 (put 'upcase-region 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 
+
+;; load my customisations
+(setq custom-pack-dir (concat user-emacs-directory "dargz-pack/"))
+(add-to-list 'load-path custom-pack-dir)
+
+(load (expand-file-name "init.el" custom-pack-dir))
+
 ;; Conclude init by setting up specifics for the current user
 (when (file-exists-p user-settings-dir)
   (mapc 'load (directory-files user-settings-dir nil "^[^#].*el$")))

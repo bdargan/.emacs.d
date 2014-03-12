@@ -59,8 +59,9 @@
 
 ;; mac friendly font
 (when window-system
-  (setq magnars/default-font "-apple-Menlo-medium-normal-normal-*-14-*-*-*-m-0-iso10646-1")
-  (setq magnars/presentation-font "-apple-Monaco-medium-normal-normal-*-28-*-*-*-m-0-iso10646-1")
+  (setq magnars/default-font "-apple-Inconsolata-medium-normal-normal-*-12-*-*-*-m-0-iso10646-1")
+;;  (setq magnars/default-font "-apple-Menlo-medium-normal-normal-*-14-*-*-*-m-0-iso10646-1")
+  (setq magnars/presentation-font "-apple-Inconsoloata-medium-normal-normal-*-24-*-*-*-m-0-iso10646-1")
   (set-face-attribute 'default nil :font magnars/default-font))
 
 ;;;   (setq magnars/default-font "-apple-Monaco-medium-normal-normal-*-16-*-*-*-m-0-iso10646-1")

@@ -24,6 +24,7 @@
   (when (boundp 'magnars/presentation-font)
     (set-face-attribute 'default nil :font magnars/presentation-font)))
 
+;; Fonts are set in mac.el, maybe a bug
 (defun use-default-theme ()
   (interactive)
   (disable-theme 'prez)

@@ -119,9 +119,10 @@
 (require 'setup-hippie)
 (require 'setup-yasnippet)
 (require 'setup-perspective)
-(require 'setup-fip)
 (require 'setup-html-mode)
 (require 'setup-paredit)
+(require 'setup-projectile)
+
 
 ;; Font lock dash.el
 (eval-after-load "dash" '(dash-enable-font-lock))

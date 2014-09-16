@@ -81,7 +81,8 @@
      clojure-mode
      cider
      cider-tracing
-     ag)))
+     ag
+     projectile)))
 
 (condition-case nil
     (init--install-packages)
@@ -118,7 +119,7 @@
 (require 'setup-hippie)
 (require 'setup-yasnippet)
 (require 'setup-perspective)
-(require 'setup-ffip)
+(require 'setup-fip)
 (require 'setup-html-mode)
 (require 'setup-paredit)
 
@@ -170,7 +171,6 @@
 (require 'multiple-cursors)
 (require 'delsel)
 (require 'jump-char)
-(require 'eproject)
 (require 'wgrep)
 (require 'smart-forward)
 (require 'change-inner)

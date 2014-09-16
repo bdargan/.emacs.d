@@ -80,7 +80,8 @@
      gitignore-mode
      clojure-mode
      cider
-     cider-tracing)))
+     cider-tracing
+     ag)))
 
 (condition-case nil
     (init--install-packages)

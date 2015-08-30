@@ -6,6 +6,7 @@
 ;; No splash screen please ... jeez
 (setq inhibit-startup-message t)
 
+(setq user-emacs-directory "/Users/brettdargan/.emacs.d/")
 ;; Set path to dependencies
 (setq site-lisp-dir
       (expand-file-name "site-lisp" user-emacs-directory))
@@ -50,10 +51,16 @@
 ;; Setup packages
 (require 'setup-package)
 
-;; Install extensions if they're missing
+;; Install extensions if they're missing, git-commit-mode, cider-tracing 
 (defun init--install-packages ()
   (packages-install
-   '(magit
+   '(gitconfig-mode
+     gitignore-mode
+     perspective
+     multiple-cursors
+     expand-region
+     tagedit
+     magit
      paredit
      move-text
      god-mode
@@ -64,8 +71,15 @@
      flx
      flx-ido
      css-eldoc
-     yasnippet
      smartparens
+     jump-char
+     wgrep
+     smart-forward
+     change-inner
+     multifiles
+     browse-kill-ring
+     smex
+     ido-ubiquitous
      ido-vertical-mode
      ido-at-point
      simple-httpd
@@ -75,15 +89,13 @@
      highlight-escape-sequences
      whitespace-cleanup-mode
      elisp-slime-nav
-     git-commit-mode
-     gitconfig-mode
-     gitignore-mode
      clojure-mode
      cider
-     cider-tracing
      ag
      projectile)))
 
+;; 
+;;     yasnippet
 (condition-case nil
     (init--install-packages)
   (error

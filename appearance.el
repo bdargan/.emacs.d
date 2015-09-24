@@ -47,6 +47,6 @@
 ;; (color-theme-initialize)
 
 ;;(use-default-theme)
-(color-theme-solarized-dark)
+(color-theme-solarized-light)
 
 (provide 'appearance)
